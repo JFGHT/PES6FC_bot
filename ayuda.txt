@@ -1,0 +1,9 @@
+/stats - Listado de poleadores
+/pole - Devuelve al poleador del día
+/insultar <persona> - Insulta a alguien
+/clasificacion - Enlaces a clasificaciones
+/censo - Censo de jugadores
+/hilo - Hilo en FC
+/nohomo - Muestra una foto no homo
+/info - Información sobre el bot
+/ayuda - Muestra este mensaje de ayuda
