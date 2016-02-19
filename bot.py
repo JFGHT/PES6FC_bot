@@ -20,7 +20,7 @@ TOKEN = '196817759:AAGPd3ZCCnByvXjUE-MHZRD6ZIGtR9uWr0M' # Nuestro tokken del bot
 ADMIN = [6216877]
 GRUPOS = [-30460278, -119705997]
 PUEDO_POLEAR = False
-POLEADOR = 'nobody'
+POLEADOR = ''
 POLES = {}
 #############################################
 
@@ -75,7 +75,7 @@ def check_midnight(m):
 # Reconoce el comando y llama a la función adecuada
 @bot.message_handler(func=lambda msg:msg.text.encode("utf-8"))
 def commands(m):
-    global POLES, ADMIN
+    global POLES, ADMIN, POLEADOR
     if autorizacion(m.from_user.id):
         c = [
             '/starting', '/pole', '/insultar', 
@@ -88,6 +88,8 @@ def commands(m):
             if m.from_user.id in ADMIN:
                 with open('poles.json') as file:
                     POLES = json.load(file)
+                with open('pole.json') as other_file:
+                    POLEADOR = json.load(other_file)
                 checker = Thread(target = check_midnight(m))
                 checker.start()
         elif c[1] in m.text[:len(c[1])]:
@@ -133,6 +135,8 @@ def command_detectar_pole(m):
             else:
                 POLES[POLEADOR] = 1
             
+            with open('pole.json', 'w') as other_file:
+                json.dump(POLEADOR, other_file)
             with open('poles.json', 'w') as file:
                 json.dump(POLES, file)
 
@@ -159,10 +163,12 @@ def despedida(m):
 def command_pole(m):
     global PUEDO_POLEAR, POLEADOR
     if comprueba_grupo(m): 
-        if not PUEDO_POLEAR:
-            bot.send_message(m.chat.id, '||| Poleador del día |||\n\n@' + POLEADOR)
-        else: 
+        if PUEDO_POLEAR:
             bot.send_message(m.chat.id, 'Corre hijo de puta, aún no han hecho la pole')
+        elif POLEADOR == '':
+            bot.send_message(m.chat.id, 'Lo siento shurhander, todavía no ha habido ninguna pole')
+        else: 
+            bot.send_message(m.chat.id, '||| Poleador del día |||\n\n@' + POLEADOR)
 
 
 
