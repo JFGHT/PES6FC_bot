@@ -4,6 +4,7 @@
 /clasificacion - Enlaces a clasificaciones
 /censo - Censo de jugadores
 /hilo - Hilo en FC
+/equipos - Lista de equipos prohibidos
 /nohomo - Muestra una foto no homo
 /info - Información sobre el bot
 /ayuda - Muestra este mensaje de ayuda

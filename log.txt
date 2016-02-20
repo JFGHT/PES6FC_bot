@@ -2090,37 +2090,840 @@ supremoh[-119705997]: /pole
 supremoh[-119705997]: /pole
 supremoh[-119705997]: /stats
 supremoh[-119705997]: /nohomo
-supremoh[-119705997]: /nohomo
-supremoh[-119705997]: /starting
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /nohomo
-supremoh[-119705997]: /starting
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /starting
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /starting
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /starting
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /starting
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /starting
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /starting
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /starting
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /starting
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /pole
-supremoh[-119705997]: /hilo
-supremoh[-119705997]: /censo
-supremoh[-119705997]: /pole
+Caparro[-30460278]: CHOLLAZO 💥❗️ Para Gamers 👾
+http://i.imgur.com/49RDy8G.png
+
+🔹 Raton Gaming Trust GTX 33 por solo 14€❗️💥 (PVP:+30€)
+✨Precio mínimo histórico. En Mediamarkt vale 41€
+   
+      🔰http://amzn.to/1KYvxwX
+
+Más INFO:🔰http://reyesdelchollo.com/blog/chollazo-raton-gaming-trust-14e/
+
+👾 Visto en: @chollos
+Caparro[-30460278]: Es bueno?
+Adrian[-30460278]: Si, si que lo es
+Adrian[-30460278]: Sólo tienes que mirar que tiene pesos personalizados
+Adrian[-30460278]: Que ya dice que es de cierta gama
+Adrian[-30460278]: Eso si, calidad/duración mi idea
+Caparro[-30460278]: Estoy por pillarlo
+Adrian[-30460278]: Hombre, por ese precio t puedes arriesgar un poco ms
+supremoh [6216877]: /info
+supremoh[-30460278]: No sirve, yo necesito la hora del server para actualizar una variable, la de los mensajes no vale
+Pedro[-30460278]: si vale, hombre, hazme caso xD
+Pedro[-30460278]: con la hora y fecha del mensaje puedes traducir la hora del server de telegram a la española
+Pedro[-30460278]: si no tienes guardada ya la pole para hoy, significa que ese mensaje es la pole
+Pedro[-30460278]: así no tienes ni que hacer un /startpole ni nada de eso
+supremoh[-30460278]: Pues me explicaras como porque no lo veo
+Pedro[-30460278]: jejej
+supremoh[-30460278]: Además, la hora de los mensajes es hora Unix, no es como datetime.now
+Pedro[-30460278]: pues si es hora unix de puta madre, mejor me lo pones
+Pedro[-30460278]: cuando tu te crees un objeto date time (no sé como va en python exactamente) casi 100% seguro de que le puedes meter por parámetros la fecha unix
+Pedro[-30460278]: y si el server tiene la hora puesta en español, ya lo tienes al tirón
+Pedro[-30460278]: datetime.datetime.fromtimestamp(
+        int("1284101485")
+    )
+Pedro[-30460278]: y con eso ya tienes tu objetito rico
+Pedro[-30460278]: y la fecha del mensaje niquelada
+Pedro[-30460278]: luego un .strftime('%Y-%m-%d') para sacar la fecha, y ya puedes comprobar si ha habido pole o no en esa fecha
+Pedro[-30460278]: ups, pensaba que estabamos por privi xD
+Caparro[-30460278]: Jaja
+Pedro[-30460278]: circulen, aquí no hay nada que ver
+Damián[-30460278]: aqui tenemos la solucion al paro en ejpaña
+Onofre[-30460278]: Diooos
+Onofre[-30460278]: Chino
+Onofre[-30460278]: Me suena a chino todo de lo que habláis 😂
+supremoh[-30460278]: Te suena mas el danes o esto? xd
+Ángel[-30460278]: Joder
+Ángel[-30460278]: Ya subieron de precio el jodido ratón
+Caparro[-30460278]: Fuck
+Fer[-30460278]: si alguien quiere tema estoy disponible
+Fer[-30460278]: echate uno
+supremoh[-30460278]: Estoy trabajando shurhander
+Fer[-30460278]: y después dicen que hay paro
+Fer[-30460278]: @alejandrov8 @GaliciaVG os invoco
+Fer[-30460278]: @Sanmartin90 @javx8
+Fer[-30460278]: alguien
+Caparro[-30460278]: yo a la tarde
+Caparro[-30460278]: 😆
+Fer[-30460278]: a la tarde es tarde
+Caparro[-30460278]: pos nada, ahyora toy en curro
+Fer[-30460278]: na pues si no me obligareis a seguir pasando apuntes
+Fer[-30460278]: /insultar a todos
+Caparro[-30460278]: jajajajajajajajajajja
+supremoh[-30460278]: Paro hay, que yo soy estudiante xd
+Alejandrov8[-30460278]: ?
+Fer[-30460278]: juegas?
+Alejandrov8[-30460278]: Yo nunca duermo
+Fer[-30460278]: eso es que si?
+Fer[-30460278]: zumbido
+Alejandrov8[-30460278]: JAJAJJAJAJAJA
+Alejandrov8[-30460278]: Espera quw llegue a casa jodr
+Javi[-30460278]: Hestudiando me hallo
+Fer[-30460278]: si yo también pero quiero jugar
+Fer[-30460278]: 😂
+Alejandrov8[-30460278]: Hinjenieria?
+Javi[-30460278]: Hinjeniero frustrado haciendo economía, a su servicio
+Alejandrov8[-30460278]: JAJAJJAJAJA
+Alejandrov8[-30460278]: Mi novia ade esta estudiando DEP
+Alejandrov8[-30460278]: Te juego uno, te meto una perfa y te vas a tomar por culo a estudiar que eres un nini
+Fer[-30460278]: venga
+Fer[-30460278]: a ver si eres capaz
+Fer[-30460278]: /insultar @alejandrov8
+Fer[-30460278]: cri cri cri...
+Fer[-30460278]: que rapidez
+Alejandrov8[-30460278]: Casi
+Fer[-30460278]: pero que hostias
+Alejandrov8[-30460278]: Que  conste que ne ha dado la vuelta al salir de mi casa para jugar contifo
+Alejandrov8[-30460278]: Eso es amor
+Alejandrov8[-30460278]: ❤️
+Fer[-30460278]: @supremoh te salió algo retrasado el bot
+Alejandrov8[-30460278]: Igual que el dueño 🤔
+Fer[-30460278]: no me metais en vuestras peleas
+Fer[-30460278]: venga metete a chile
+Alejandrov8[-30460278]: Entrando
+Alejandrov8[-30460278]: Donde estas majara @Lloberu
+Fer[-30460278]: entrando
+Alejandrov8[-30460278]: Otros parches
+Alejandrov8[-30460278]: Crea tu
+Pedro[-30460278]: chaval, que ahora te juegas los cuartos
+Pedro[-30460278]: y encima eres moroso
+D' Artagnan[-30460278]: Alguien juega shurs?
+supremoh[-30460278]: Cuantas veces os voy a tener que decir que está en un servidor gratuito y lo tiran cada x horas?
+supremoh[-30460278]: O igual que tu puta madre
+Caparro[-30460278]: 😂😂
+Adrian[-30460278]: Yo estaba curranding, a ver a que hora llegó y jugamos
+Fer[-30460278]: Chicharrazo
+Caparro[-30460278]: móvil por 4€ creo
+
+http://freedom251.com/home
+Alejandrov8[-30460278]: Que cuartos
+Pedro[-30460278]: se te ve en el reflejo (no homo)
+Fer[-30460278]: Puede ser
+Fer[-30460278]: serio correctivo el que se acaba de llevar el amigo
+D' Artagnan[-30460278]: Alguien partidito?
+D' Artagnan[-30460278]: Plss
+D' Artagnan[-30460278]: Plss
+Fer[-30460278]: yoo
+Fer[-30460278]: chile
+D' Artagnan[-30460278]: Voy
+D' Artagnan[-30460278]: A que me des un correctivo?
+Fer[-30460278]: no lo creo
+Fer[-30460278]: estaba motivado en los partidos de antes
+Alejandrov8[-30460278]: Yo no me he metido con tu madre cabezon de mierda con la cara esa que tienes, que voy a tener que ir a granada a reventarte gilipollas
+Caparro[-30460278]: Relajate primo...
+Alejandrov8[-30460278]: Es que es gilipollas el chaval este
+Diego Herbie[-30460278]: Nice troll
+Adrian[-30460278]: Yo estoy encendiendo la pc
+Caparro[-30460278]: Respeto shur.. que has empezado tu
+Caparro[-30460278]: A ver si tengo que sacar la reportadora
+Diego Herbie[-30460278]: Si esta trolleando, solo mindugui se ofende en este grupo xd
+Adrian[-30460278]: Hay salsero por lo que veo
+supremoh[-30460278]: Si insultas, no esperes que te trate diferente
+David[-30460278]: Silencio
+Pablo[-30460278]: Por fin me han verificau!
+Adrian[-30460278]: A mi aún no, me ofian 😭
+Pablo[-30460278]: Casi 3 dias
+Adrian[-30460278]: Espera espera
+Adrian[-30460278]: Que me han verificau
+Adrian[-30460278]: Alguien quiere jugar para estrenarla?
+Damián[-30460278]: Que sexy bajando la persianita
+Damián[-30460278]: Venga te juegobyo
+Damián[-30460278]: Eu2
+Adrian[-30460278]: Voy entrando
+Adrian[-30460278]: Espera, que lo tengo en el server de chile
+Adrian[-30460278]: Y no me acuerdo como se cambia 😅
+Damián[-30460278]: Tambien lo tenia yo xd
+Damián[-30460278]: Windows system32 drivers etc
+Adrian[-30460278]: Hay q llamarlo hosts no?
+Damián[-30460278]: Dentro de etc si
+Caparro[-30460278]: si
+Adrian[-30460278]: En eu2 estoy
+ercarR9[-30460278]: Lo habrá hecho en modo andaluz
+Fer[-30460278]: Ya veras cuando lo vea luis
+Pablo[-30460278]: Yo como y me echo una
+Fer[-30460278]: Siesta?
+Damián[-30460278]: Una sevillana
+Pablo[-30460278]: Siesta y futbito
+Adrian[-30460278]: Alguien amist?
+Luis[-30460278]: /nohomo
+Luis[-30460278]: EEEE
+Luis[-30460278]: EL BOT
+Pedro[-30460278]: ya se acabó la era del pique entre @Lloberu y @alejandrov8 , pasó a una dimensión homo sin remisión
+Pedro[-30460278]: de lanzamiento de besitos
+Pedro[-30460278]: ahora el pique sano ya sabemos cual es xD
+Alejandrov8[-30460278]: Que va, con @Lloberu siempre habra piques sanos
+Alejandrov8[-30460278]: I ❤️ Lloberu jjajaajaja
+Alejandrov8[-30460278]: Y mi paisano @wichico tmb
+Alejandrov8[-30460278]: Jajajajajja
+Alejandrov8[-30460278]: Que a ver cuando quedamos para echar un pes en modo offline
+Ivan[-30460278]: Shur relajante pero tienes razón
+Pedro[-30460278]: va a ser el encuentro homo-galáctico del milenio
+Alejandrov8[-30460278]: Jajajajjaajajajajja tranquilo que aos avisaremos para que @Leitinho  retransmita JAJJAJAJAA
+Pedro[-30460278]: espero que solo se vea FÚTBOL
+Alejandrov8[-30460278]: JAJAJJAJA 😂
+Adrian[-30460278]: Boxeo también 💪
+Fer[-30460278]: Vaya homos que sois joder
+Damián[-30460278]: que poco exito ha tenido el premio puskas en fc
+Damián[-30460278]: por ahora esta fernando en la pole
+Pablo[-30460278]: Quien se queda siempre viendo la intro del parche del pes? Voseemiaparaseuuu
+Javi[-30460278]: Donde se vota?
+Pablo[-30460278]: http://www.forocoches.com/foro/showthread.php?t=4802863&highlight=castolo
+Pablo[-30460278]: Que había que poner en la pass para el online? Me sale siempre connection lost
+Caparro[-30460278]: A ver
+Caparro[-30460278]: Comprueba el host
+Caparro[-30460278]: 🚩🚩🚩🚩 Atención. Para seguir jugando en el pesgate, hay que cambiar el host.
+
+164.132.67.120 pes6gate-ec.winning-eleven.net    # PESGate Sixserver
+91.200.16.56 we9stun.winning-eleven.net          # Stunserver
+Caparro[-30460278]: Asegura q tienes ese
+Caparro[-30460278]: Y tienes que loguearto con Usuario-pass
+Pablo[-30460278]: Donde pongo lo del host?
+Caparro[-30460278]: En el archivo host, lo abres como nloc de notas
+Caparro[-30460278]: Q esta en system 32, driver, etc
+Pablo[-30460278]: Ahhh vale vale
+Pablo[-30460278]: Voy a ello thnx. mr caparro
+Caparro[-30460278]: 😘
+Pablo[-30460278]: Ya me va
+Pablo[-30460278]: Amistoso alguien?
+Caparro[-30460278]: 👍👍👍
+Caparro[-30460278]: Yo a la tarde/noche
+Caparro[-30460278]: Ahora, como todos los de aquí son andaluces, estarán en la siesta
+Caparro[-30460278]: 😱😱😱😱😱😱
+Adrian[-30460278]: Yo ahora puedo jugar
+Pablo[-30460278]: Me meto de nuevo que me había salido
+Pablo[-30460278]: En que server os metéis? Ve diciéndome
+Caparro[-30460278]: Eu2
+Adrian[-30460278]: Eu2 q voy
+Pablo[-30460278]: Joder espera que me he vuelto a quedar atrapado en el vosemiapareseu
+Pablo[-30460278]: Temazo
+Caparro[-30460278]: 😂😂😂😂
+Caparro[-30460278]: Yo aún no he podido ni votar
+Pablo[-30460278]: Ya estoy, Biblodra soy
+Adrian[-30460278]: Metete a la sala
+Pablo[-30460278]: Cual?
+Adrian[-30460278]: La única en la que esta una persona sola en eu2
+Pablo[-30460278]: Leitinho
+D' Artagnan[-30460278]: Alguien juega amistosos?
+Alejandrov8[-30460278]: No
+Alejandrov8[-30460278]: Yo nunca duermo
+Pablo[-30460278]: Yo estoy en ello con un shur
+Alejandrov8[-30460278]: He visto los goles para el premio castolo... Y me quedo con el de lloberu, y 2 creo que de @diegoherbie53
+Alejandrov8[-30460278]: @Lloberu
+Alejandrov8[-30460278]: El de tacon esta muy guapo y el del centro del campo jajjajaa
+Fer[-30460278]: Sabía que no me ibas a fallar
+Alejandrov8[-30460278]: Nunca lo haré
+Alejandrov8[-30460278]: 👍😍
+Adrian[-30460278]: A mi me ha gustado el de Chicharito
+Pablo[-30460278]: 1-1 y 1-1 en mis primeros partidos contra Adrian
+Pablo[-30460278]: Se trasca
+Pedro[-30460278]: upearlo de vez en cuando
+Pedro[-30460278]: Ya te cansaras xD
+Pedro[-30460278]: Han votado 52 personas, not bad
+Mario A.[-30460278]: Somos 53, el que falte que vote 😂
+Pablo[-30460278]: Voy entrando al onlain, quien quiera amistoso que venga, tardo 15 min (5 min en entrar 10 min vosemiaparaseu)
+Pedro[-30460278]: Ea, hace falta actualizar el censo
+ercarR9[-30460278]: Hasta cuando se puede votar?
+Adrian[-30460278]: Sigo en eu2
+Fer[-30460278]: Chicharito for puskas
+D' Artagnan[-30460278]: Yo voto a defoe
+D' Artagnan[-30460278]: sin duda
+Alejandrov8[-30460278]: Yo JAJAJJAA
+Alejandrov8[-30460278]: pasad hilo
+D' Artagnan[-30460278]: @diegoherbie53
+Fer[-30460278]: Pos te rajo
+Fer[-30460278]: Bueno yo vote al de tacon, no se de quien es
+Alejandrov8[-30460278]: Ese para mi es el ganador
+Fer[-30460278]: No te equivoques
+Fer[-30460278]: Estas picado porque te di pal pelo antes
+Pablo[-30460278]: A mi no me miréis yo he votado a KO-DOS
+Pedro[-30460278]: El canal está pa algo premoh
+Damián[-30460278]: @alejandrov8 te caen por todos lados premoh
+Pedro[-30460278]: Acumula haters a paladas
+Alejandrov8[-30460278]: Yo se que tu no eres mi hater  😝❤️
+Adrian[-30460278]: Hoy es l sorteo?
+ercarR9[-30460278]: /hilo
+ercarR9[-30460278]: Está desactivado?
+Pablo[-30460278]: Si no meteros en el canal
+Pablo[-30460278]: Estamos aqui 53 y en el canal 47 asi que algo falla
+Fer[-30460278]: El 25 empieza la eleccion
+Pablo[-30460278]: Que hay sorteo de equipos no?
+ercarR9[-30460278]: No
+ercarR9[-30460278]: Se sortea el orden para elegir
+ercarR9[-30460278]: Equipo coges el que quieras/puedas
+ercarR9[-30460278]: Menos los que están vetados
+Adrian[-30460278]: Ah valep
+supremoh[-30460278]: server gratuito, no dura ni 5h activado
+supremoh[-30460278]: Ala, todos los comandos palante xd
+supremoh[-119705997]: pole
+supremoh[-119705997]: pole
+Alejandrov8[-30460278]: Pesao joder.....
+supremoh[-119705997]: pole
+Fer[-30460278]: Fui yo
+supremoh[-119705997]: pole
+Alejandrov8[-30460278]: Quien sea ajjjaa
+supremoh[-30460278]: A mi no me mires, solo lo he activado para probar lo que me dijo pedro
+Pablo[-30460278]: 😆
+Pablo[-30460278]: Donde salen los equipos vetados? Aunque me hago una idea
+Damián[-30460278]: En el hilo de la anterior temporada salen al principio
+Alejandrov8[-30460278]: De nada
+Pablo[-30460278]: Amistoso anyone?
+Adrian[-30460278]: Lcs, sorry
+Z4ge[-30460278]: Amistoso?
+Z4ge[-30460278]: Pablo?
+supremoh[-119705997]: pole
+Pablo[-30460278]: Amos?
+supremoh[-119705997]: pole
 supremoh[-119705997]: pole
 supremoh[-119705997]: /pole
+supremoh[-119705997]: /stats
+Z4ge[-30460278]: Lobby?
+Pablo[-30460278]: Esperq
+Pablo[-30460278]: Que estoy con la intro otra vez atrapao
+Pablo[-30460278]: Vosemiapareseuuuu
+Pablo[-30460278]: Ahora te digo
+Adrian[-30460278]: Dale al intro coño
+Pablo[-30460278]: NI HABLAR
+Pablo[-30460278]: Eu2 Biblodra soy entrando estoy
+Z4ge[-30460278]: Espero alli
+Pablo[-30460278]: Se ha metido otro xD
+supremoh[-119705997]: pole
+supremoh[-119705997]: pole
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /starting
+supremoh[-119705997]: pole
+supremoh[-119705997]: pole
+supremoh[-119705997]: pole
+supremoh[-119705997]: /starting
 supremoh[-119705997]: /pole
-supremoh[-119705997]: /hilo
-supremoh[-119705997]: /censo
+supremoh[-119705997]: pole
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /pole
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /pole
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /pole
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /poles
+supremoh[-119705997]: /poles
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /pole
+supremoh[-119705997]: /stats
+supremoh[-119705997]: /ayuda
+supremoh[-119705997]: /equipos
+supremoh[-119705997]: /equipos
+supremoh[-119705997]: /hiilo
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /equipos
+supremoh[-119705997]: /equipos
+supremoh[-119705997]: /equipos
+supremoh[-30460278]: /ayuda
+supremoh[-30460278]: /equipos
+supremoh[-30460278]: Ala, ya ten
+supremoh[-30460278]: Ala, ya teneis eso
+supremoh[-30460278]: Y las poles ya estan arregladas, hoy no deberia de pasar lo que paso ayer
+supremoh[-30460278]: Vale, eso me pasa por no hacer /starting xd
+supremoh[-30460278]: /starting
+supremoh[-119705997]: /equipos
+supremoh[-119705997]: /equipos
+supremoh[-30460278]: Alguien juega
+supremoh[-30460278]: ?
+D' Artagnan[-30460278]: Yo
+Adrian[-30460278]: /insultar supremoh
+Alejandrov8[-30460278]: Yo luego 🌚
+supremoh[-30460278]: Eu2
+D' Artagnan[-30460278]: Chile?
+supremoh[-30460278]: Pesgate mindungui, que solo hay una cuenta de respuesto y la tendriamos que usar los dos
+D' Artagnan[-30460278]: Vale manco
+Alejandrov8[-30460278]: Quien me echa uno?
+Z4ge[-30460278]: Yo
+supremoh[-30460278]: Cuando has entrado @Zz4ge ? :roto2:
+Z4ge[-30460278]: ?
+D' Artagnan[-30460278]: Lol
+D' Artagnan[-30460278]: Enolme
+supremoh[-30460278]: dep, no pudo con la presion
+supremoh[-30460278]: Entrando @Alonsoluiso
+ercarR9[-30460278]: Dep
+D' Artagnan[-30460278]: See
+D' Artagnan[-30460278]: Ya estoy
+D' Artagnan[-30460278]: Eu2
+Alejandrov8[-30460278]: le damos?
+Z4ge[-30460278]: Ok
+Z4ge[-30460278]: Lobby?
+Alejandrov8[-30460278]: chile
+Z4ge[-30460278]: ..donde estas conectado y con q nick?
+Alejandrov8[-30460278]: estas en chile ? todavia no he entrado ajajajjaa
+Alejandrov8[-30460278]: ALGUIEN PARA AMISTOSO? ESTOY EN CHILE
+Caparro[-30460278]: Ya me avisó. Él no podía jugar, su internet no se lo permite
+Alejandrov8[-30460278]: un amistoso ?
+Caparro[-30460278]: /stats
+Caparro[-30460278]: Buuh xD
+Caparro[-30460278]: Resetea
+Adrian[-30460278]: Yo me pido ya colista para la liga, no marco ni al arcoiris
+Z4ge[-30460278]: Alguien jugaba con la version d xbox360...me da la sensacion q el juego va diferente...
+supremoh[-30460278]: Ya se queda así xd
+supremoh[-30460278]: http://www.youtube.com/watch?v=T9KN7mbNb-w
+supremoh[-30460278]: Alguien juega uno de última hora
+supremoh[-30460278]: ?
+Nolin[-30460278]: yo , pero uno rapido
+Nolin[-30460278]: si estás aun
+Adrian[-30460278]: Yo luegop
+supremoh[-30460278]: Vamos
+supremoh[-30460278]: Eu2
+Nolin[-30460278]: voy
+supremoh[-30460278]: Sigue el bot activo?
+supremoh[-30460278]: /ayuda
+ercarR9[-30460278]: Algún levantino?
+ercarR9[-30460278]: Vaya golazo de Morales
+supremoh[-119705997]: /equipos
+supremoh[-119705997]: /
+Damián[-30460278]: Para mi gusto el levante tiene bastantw buen equipo, no se que pintan ahi abajo
+Fer[-30460278]: No me joder
+Fer[-30460278]: Como van?
+Fer[-30460278]: Puto geta
+Adrian[-30460278]: 2-0
+Adrian[-30460278]: No se si lo habrás mirado ya
+Fer[-30460278]: Venga hombre
+Fer[-30460278]: Puto getafe
+supremoh[-119705997]: /equipos
+supremoh[-119705997]: /equipos
+supremoh[-119705997]: /equipos
+Caparro[-30460278]: Ojala baje el geta, q asco de equipo xd
+Caparro[-30460278]: Hoy la pole estará tan reñida como anoche?
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /pole
+Caparro[-30460278]: Lol
+supremoh[-30460278]: Calla leche xd
+Caparro[-30460278]: /stats
+Caparro[-30460278]: Weeee
+Caparro[-30460278]: 💪💪💪💪💪
+supremoh[-30460278]: /starting
+supremoh[-30460278]: /pole
+supremoh[-30460278]: lol
+Caparro[-30460278]: 💪💪💪💪💪
+Caparro[-30460278]: Como me quiere
+Caparro[-30460278]: 😍😍😍
+supremoh[-30460278]: /starting
+supremoh[-30460278]: /pole
+Caparro[-30460278]: Omg
+Caparro[-30460278]: Pole?
+supremoh[-30460278]: Coño, que lo habías escrito antes de que yo hiciera starting
+supremoh[-30460278]: Si lo escribes antes, pues no carga el fichero antiguo de poles
+supremoh[-30460278]: Bien, dejo esto activado, dos horas debe de aguantar arriba, así que hoy hay pole disputada again
+Caparro[-30460278]: Guay
+supremoh[-119705997]: /pole
+Caparro[-30460278]: Sorry @greatqq
+Alejandrov8[-30460278]: Pole
+Alejandrov8[-30460278]: JAJAJAJ
+Damián[-30460278]: /insultar @alejandrov8
+Javi[-30460278]: Amis?
+Damián[-30460278]: En 20 min o asi
+Javi[-30460278]: Me avisas
+Damián[-30460278]: Estoy
+Javi[-30460278]: Enciendo, estaba viendo los simpson y se me ha olvidado xd
+Damián[-30460278]: Pues voy abriendo en chile
+supremoh[-119705997]: /pole
+supremoh[-119705997]: /pole
+supremoh[-119705997]: /ayuda
+supremoh[-119705997]: /ayuda
+supremoh[-119705997]: /stats
 supremoh[-119705997]: /nohomo
+D' Artagnan[-30460278]: Amistoso alguien?
+supremoh[-119705997]: /equipos
+supremoh[-119705997]: /equipos
+Pablo[-30460278]: Yo si no llego tarde
+Pablo[-30460278]: Pa amistoso
+D' Artagnan[-30460278]: Okii
+D' Artagnan[-30460278]: Avisame
+Pablo[-30460278]: Estoy ya en eu2
+D' Artagnan[-30460278]: 10 minutos
+D' Artagnan[-30460278]: Que acabo una coss
+D' Artagnan[-30460278]: Voy entrando
+D' Artagnan[-30460278]: Eu2
+Pablo[-30460278]: Voy que me habia tirado
+Alejandrov8[-30460278]: Te pierdes la pole JUAS JUAS
+David[-30460278]: /stats
+Damián[-30460278]: Se preparan los faileros
+Damián[-30460278]: /insultar @alejandrov8
+Onofre[-30460278]: POLE DANESA🇩🇰
+David[-30460278]: Pole
+Pablo[-30460278]: POLEEEEE HIJOS DE PUTA
+supremoh[-30460278]: Se nota, se siente, mi pole está presente
+Fernando[-30460278]: poleeeeeeeeeeeee
+Damián[-30460278]: Thanks ladys
+David[-30460278]: /stats
+David[-30460278]: LOL
+supremoh[-30460278]: Pues no funca bien
+Onofre[-30460278]: La pole es mia
+Damián[-30460278]: Me la llevo
+supremoh[-30460278]: /pole
+supremoh[-30460278]: Joe macho
+Damián[-30460278]: Champion
+Onofre[-30460278]: Joer😭
+Alejandrov8[-30460278]: Pole
+Damián[-30460278]: Para la proxima va para ti el insulto por tratar de levantarmela
+Alejandrov8[-30460278]: GRAN POLE JJAJAJAJAJ
+Onofre[-30460278]: 😂😂😂😂😂😂
+supremoh[-30460278]: /stats
+Alejandrov8[-30460278]: Dep
+supremoh[-30460278]: Me cago en sus muertos
+supremoh[-30460278]: Puto bot trolleador
+Damián[-30460278]: Podria haber comando de piropear
+Damián[-30460278]: Para no parecer tan soez 😂
+Alejandrov8[-30460278]: Yo se que me queria piropear en vez de insultar...☺️
+Damián[-30460278]: No me quedo otra, yo no queria pero.
+Javi[-30460278]: /stats
+Javi[-30460278]: /stats
+Javi[-30460278]: Sólo con darle al comando ya lo vuelve a mandar, fail
+Damián[-30460278]: Quiero hacer mencion al que fue un gran polero como @greatqq .se fuerte amigi
+David[-30460278]: /pole
+Javi[-30460278]: Esto esta amañado para q salga su creador
+Adrian[-30460278]: Que chanchulleros
+Adrian[-30460278]: Pucherazo 100%
+Javi[-30460278]: El nuevo caparro
+Fernando[-30460278]: ||| Listado de poleadores |||
+
+supremoh = 1
+Fernando[-30460278]: volveremos de la mano amigo
+supremoh[-30460278]: /starting
+supremoh[-30460278]: /info
+supremoh[-30460278]: /info
+supremoh[-30460278]: /info
+supremoh[-30460278]: /starting
+supremoh[-30460278]: Vale, segun el bot todavia es ayer xd
+supremoh[-30460278]: /starting
+supremoh[-30460278]: /info
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /info
+supremoh[-30460278]: /info
+supremoh[-30460278]: /info
+supremoh[-30460278]: Vale, la hora va retrasada tambien en telegram una hora xd
+supremoh[-30460278]: Osea, que hoy hay pole a las 1, para los mas heavys
+supremoh[-119705997]: /starting
+supremoh[-119705997]: /info
+supremoh[-119705997]: /info
+supremoh[-119705997]: /info
+supremoh[-119705997]: /info
+supremoh[-119705997]: /info
+Alejandrov8[-30460278]: Si hoy es 20 ya
+Javi[-30460278]: Que calvo se ha quedado morgan freeman
+supremoh[-30460278]: Si que esta joven samuel l jackson
+supremoh[-119705997]: /starting
+supremoh[-119705997]: pole
+supremoh[-119705997]: /pole
+supremoh[-119705997]: /stats
+supremoh[-119705997]: /pole
+supremoh[-119705997]: /stats
+Luis[-30460278]: Nadie me dedica la pole
+Luis[-30460278]: /nohomo
+Luis[-30460278]: Me dare al alcohol
+supremoh[-30460278]: /nohomo
+supremoh[-30460278]: uo que juapeton
+Luis[-30460278]: /nohomo
+Luis[-30460278]: Me sonrojas
+supremoh[-30460278]: ha venido perfecto hijo de puta 😆
+Luis[-30460278]: Este bot sabe lo que se hace
+supremoh[-30460278]: Menos para las poles, entonces hace mas fails que damian
+Luis[-30460278]: /nohomo
+Luis[-30460278]: Ya paro
+supremoh[-30460278]: Joder macho
+supremoh[-30460278]: Esa es demasiado homo
+Adrian[-30460278]: Pero por que tanto homo
+supremoh[-30460278]: son nuestras constumbres y tienes que respetarlas
+Adrian[-30460278]: Vale pirata
+Javi[-30460278]: La última xddd
+Javi[-30460278]: Preparen las auténticas poles
+supremoh(6216877): Nope, han tirado ya el bot y yo estoy en la calle xd : [-30460278]
+javx8(146083557): Mejor, menos competencia : [-30460278]
+supremoh(6216877): Vamos, que el poleador oficial de hoy es @GaliciaVG : [-30460278]
+javx8(146083557): /stats : [-30460278]
+javx8(146083557): Casi cuela : [-30460278]
+javx8(146083557): Jeje : [-30460278]
+supremoh(6216877): pues a mi no me iba por privado xd : [-30460278]
+javx8(146083557): Claro claro : [-30460278]
+diegoherbie53(11711830): Polefail : [-30460278]
+javx8(146083557): Pole real : [-30460278]
+Leitinho(48757639): Pole? : [-30460278]
+Leitinho(48757639): Failete : [-30460278]
+diegoherbie53(11711830): 😊 : [-30460278]
+javx8(146083557): Stats : [-30460278]
+javx8(146083557): /stats : [-30460278]
+javx8(146083557): Joder : [-30460278]
+javx8(146083557): Entonces esta pole se pierde o que xd : [-30460278]
+javx8(146083557): Que me devuelvan el dinero, el bot no funka : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+Leitinho(48757639): /nohomo : [-30460278]
+Leitinho(48757639): /sihomo : [-30460278]
+diegoherbie53(11711830): Siempre salen las mismas, timo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+Leitinho(48757639): Vaya timo de bot : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+Leitinho(48757639): /insultar bot : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+javx8(146083557): Estáis fatal : [-30460278]
+diegoherbie53(11711830): Me rio yo solo con las fotos jajaja : [-30460278]
+Leitinho(48757639): Nueva no homo : [-30460278]
+supremoh(6216877): habia treinta y tantas fotos xd : [-30460278]
+javx8(146083557): Lol : [-30460278]
+diegoherbie53(11711830): En verdad por lo de las fotos aunque sea el bot ya merece la pena, porque la info esta bien, pero una foto de luis cuando uno quiera no tiene precio : [-30460278]
+javx8(146083557): /pole : [-30460278]
+supremoh(6216877): /stats : [-30460278]
+supremoh(6216877): lol : [-30460278]
+javx8(146083557): /info : [-30460278]
+javx8(146083557): Ahora si esta bien ajustada la hora xd : [-30460278]
+javx8(146083557): Que paja : [-30460278]
+supremoh(6216877): Yo no se que le pasa a la mierda esta, ya lo mirare mañana : [-30460278]
+Leitinho(48757639): Pero las fotos de no homo quien son? 😂 : [-30460278]
+javx8(146083557): De @wichico : [-30460278]
+javx8(146083557): A veces juega al PES y todo : [-30460278]
+javx8(146083557): Un jrande : [-30460278]
+supremoh(6216877): de un homo : [-30460278]
+supremoh(6216877): /pole : [-119705997]
+supremoh(6216877): /stats : [-119705997]
+supremoh(6216877): pole : [-119705997]
+supremoh(6216877): /pole : [-119705997]
+alejandrov8(8147614): New haircut ?😂😂 : [-30460278]
+diegoherbie53(11711830): Eso es de hace la tira cuando se peló xD : [-30460278]
+alejandrov8(8147614): Ostia vaya pedazo dd homo Jajjaa : [-30460278]
+diegoherbie53(11711830): Pero tu no duermes nunca? : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): No tira : [-30460278]
+diegoherbie53(11711830): Sa petao : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+Leitinho(48757639): Pues yo creó que es un poco /sihomo : [-30460278]
+alejandrov8(8147614): JAJAJJAJAJAJAJAJAJJAJA : [-30460278]
+wichico(4855614): Eso es un privilegio al alcance de pocos : [-30460278]
+wichico(4855614): Vaya car dd asco joder : [-30460278]
+Leitinho(48757639): Alguien de aqui le da al lolete? : [-30460278]
+diegoherbie53(11711830): Wow : [-30460278]
+supremoh(6216877): mi mas profundo odio a ese tipo de juegos : [-30460278]
+diegoherbie53(11711830): Yo juego con mi mano, de tranquis : [-30460278]
+diegoherbie53(11711830): Haciendo las misiones y tal : [-30460278]
+Leitinho(48757639): Yo también juego con las manos : [-30460278]
+Caparro(7398148): Pole? : [-30460278]
+Caparro(7398148): /starting : [-30460278]
+Caparro(7398148): Fail 😭 : [-30460278]
+Bitters(899013): Tranquilidad supremoh, hoy seguramente colguemos el bot en nuestro server 😁 : [-30460278]
+Bitters(899013): Y ahí la hora estará bien : [-30460278]
+Bitters(899013): Salía una hora menos porque no estaría configurada bien la zona horaria en el servidor ese : [-30460278]
+GaliciaVG(15599911): Me dejas mas tranquilo : [-30460278]
+alejandrov8(8147614): Tranquilidad amigos, que ya he pagado el server : [-30460278]
+GaliciaVG(15599911): Yo no quiero pero me obligas con cosas asi : [-30460278]
+GaliciaVG(15599911): /insultar @alejandrov8 : [-30460278]
+alejandrov8(8147614): New haircut ?😂😂 : [-30460278]
+diegoherbie53(11711830): Eso es de hace la tira cuando se peló xD : [-30460278]
+alejandrov8(8147614): Ostia vaya pedazo dd homo Jajjaa : [-30460278]
+diegoherbie53(11711830): Pero tu no duermes nunca? : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+diegoherbie53(11711830): No tira : [-30460278]
+diegoherbie53(11711830): Sa petao : [-30460278]
+diegoherbie53(11711830): /nohomo : [-30460278]
+Leitinho(48757639): Pues yo creó que es un poco /sihomo : [-30460278]
+alejandrov8(8147614): JAJAJJAJAJAJAJAJAJJAJA : [-30460278]
+wichico(4855614): Eso es un privilegio al alcance de pocos : [-30460278]
+wichico(4855614): Vaya car dd asco joder : [-30460278]
+Leitinho(48757639): Alguien de aqui le da al lolete? : [-30460278]
+diegoherbie53(11711830): Wow : [-30460278]
+supremoh(6216877): mi mas profundo odio a ese tipo de juegos : [-30460278]
+diegoherbie53(11711830): Yo juego con mi mano, de tranquis : [-30460278]
+diegoherbie53(11711830): Haciendo las misiones y tal : [-30460278]
+Leitinho(48757639): Yo también juego con las manos : [-30460278]
+Caparro(7398148): Pole? : [-30460278]
+Caparro(7398148): /starting : [-30460278]
+Caparro(7398148): Fail 😭 : [-30460278]
+Bitters(899013): Tranquilidad supremoh, hoy seguramente colguemos el bot en nuestro server 😁 : [-30460278]
+Bitters(899013): Y ahí la hora estará bien : [-30460278]
+Bitters(899013): Salía una hora menos porque no estaría configurada bien la zona horaria en el servidor ese : [-30460278]
+GaliciaVG(15599911): Me dejas mas tranquilo : [-30460278]
+alejandrov8(8147614): Tranquilidad amigos, que ya he pagado el server : [-30460278]
+GaliciaVG(15599911): Yo no quiero pero me obligas con cosas asi : [-30460278]
+GaliciaVG(15599911): /insultar @alejandrov8 : [-30460278]
+supremoh(6216877): Ese comando era solo para mi, aunque lo voy a quitar xd : [-30460278]
+supremoh(6216877): Está caído, as always : [-30460278]
+supremoh(6216877): La hora la cogía de telegram y según su docu, coge la hora según la zona horaria de la persona : [-30460278]
+supremoh(6216877): Le sumare 3600 y a chuparla : [-30460278]
+Bitters(899013): El timestamp no tiene zona horaria premoh : [-30460278]
+Bitters(899013): Y cuando cambien la hora ye han follado : [-30460278]
+alejandrov8(8147614): Dep bot : [-30460278]
+supremoh(6216877): Timestamp lo único que hace es transformar la hora, no? : [-30460278]
+Caparro(7398148): Mentira... : [-30460278]
+Bitters(899013): Timestamp es la hora absoluta, independientemente de la zona horaria : [-30460278]
+Bitters(899013): Es decir, un mismo timestamp cambia según la zona horaria : [-30460278]
+Bitters(899013): Es decir, el timestamp es el mismo : [-30460278]
+Bitters(899013): Total, que lo que hace falta es que la zona horaria este puesta bien en nuestro server : [-30460278]
+Bitters(899013): No tienes que sumar o restar nada : [-30460278]
+supremoh(6216877): Sigo sin entenderlo, más cuando la hora se coge de telegram y no del server, pero bueno xd : [-30460278]
+Leitinho(48757639): Que bien esta despertarse y ponerse a escuchar los Pecos : [-30460278]
+Leitinho(48757639): 😐 : [-30460278]
+alejandrov8(8147614): Yo soy mas de los chichos 😐 : [-30460278]
+Leitinho(48757639): Es que en la 1 están echando un programita : [-30460278]
+Leitinho(48757639): De música nueva nueva : [-30460278]
+alejandrov8(8147614): Jajaaajjajjahajah : [-30460278]
+Lloberu(264799): Estallan todos los medidores con esta foto : [-30460278]
+Bitters(899013): Te cuento por privi : [-30460278]
+Biblodra(20089861): Amistoso alguien? Que es como entran los buenos partidos de buena mañana : [-30460278]
+Leitinho(48757639): Yo aún no me he quitado las legañas 😂 : [-30460278]
+Biblodra(20089861): Te cagas? : [-30460278]
+Alonsoluiso(147767201): Alguien juega? : [-30460278]
+Biblodra(20089861): Yo : [-30460278]
+Alonsoluiso(147767201): Voy a eu2 : [-30460278]
+Biblodra(20089861): He jugado antes y de nuevo lag al visitante como anoche : [-30460278]
+Biblodra(20089861): A ver ahora : [-30460278]
+Caparro(7398148): Que adsl tienes? : [-30460278]
+Biblodra(20089861): No es por eso : [-30460278]
+Biblodra(20089861): O no creo, me va bien con los demás shurs y otros juegos como el loñ : [-30460278]
+Biblodra(20089861): Lol : [-30460278]
+Caparro(7398148): Ok : [-30460278]
+Alonsoluiso(147767201): Ya estoy : [-30460278]
+diegoherbie53(11711830): Buenos dias churras : [-30460278]
+Caparro(7398148): Yo estoy comiendo 😂 : [-30460278]
+GaliciaVG(15599911): Mantente guiri : [-30460278]
+GaliciaVG(15599911): En al andalus aun estan desayunando : [-30460278]
+Leitinho(48757639): En al andalus les queda 2 horas para despertarse : [-30460278]
+Leitinho(48757639): Comen y siesta : [-30460278]
+alejandrov8(8147614): Aro lok : [-30460278]
+Caparro(7398148): Lo se xD : [-30460278]
+wichico(4855614): Tu nunca duermes? : [-30460278]
+alejandrov8(8147614): Nunca : [-30460278]
+alejandrov8(8147614): JJAJAJA : [-30460278]
+wichico(4855614): Vente a sedella : [-30460278]
+Biblodra(20089861): Un amistosin? jiji : [-30460278]
+alejandrov8(8147614): Que es eso lokoh : [-30460278]
+alejandrov8(8147614): Ajajjajjajajajaba : [-30460278]
+wichico(4855614): Un pueblo de malaga premoh : [-30460278]
+alejandrov8(8147614): Ni puta idea ajajajjaja : [-30460278]
+Zotadebastos(546750): Yo m acostao a las 6 y a las 10 taba despierto pa jugar fútbol : [-30460278]
+Zotadebastos(546750): Mindundis : [-30460278]
+Leitinho(48757639): Tu nunca duermes? : [-30460278]
+Lloberu(264799): Alguien juega? : [-30460278]
+Lloberu(264799): Eso es un yo? : [-30460278]
+Biblodra(20089861): Lo es : [-30460278]
+Lloberu(264799): Tira pa chile : [-30460278]
+Biblodra(20089861): Wut : [-30460278]
+Biblodra(20089861): Como me meto en ese server? No hoygan : [-30460278]
+Lloberu(264799): na vamos a eu2 : [-30460278]
+Lloberu(264799): al server normal : [-30460278]
+Biblodra(20089861): Se han metido dos, quien eres? : [-30460278]
+Lloberu(264799): ninguno : [-30460278]
+Lloberu(264799): estoy entrando : [-30460278]
+Biblodra(20089861): Okk : [-30460278]
+Lloberu(264799): cuando entre lloberu : [-30460278]
+flipeloflipa(6740086): alguien amistoso? : [-30460278]
+GaliciaVG(15599911): Que fuiste a una violacion homo? : [-30460278]
+javx8(146083557): Cruising : [-30460278]
+Leitinho(48757639): The cruising song : [-30460278]
+Biblodra(20089861): Alguien amistoso? : [-30460278]
+Caparro(7398148): yo venga, voy a ver tu lvl 😆 : [-30460278]
+Biblodra(20089861): Se trasca : [-30460278]
+Caparro(7398148): voy a eu2 : [-30460278]
+wichico(4855614): /nohomo : [-30460278]
+GaliciaVG(15599911): He tenido que buscar que es eso, menudos conocimientos homos teneis : [-30460278]
+javx8(146083557): Claro claro : [-30460278]
+Lloberu(264799): Os presento a mi shurgata : [-30460278]
+Leitinho(48757639): http://m.youtube.com/watch?v=SszMoIYpoqM : [-30460278]
+Alonsoluiso(147767201): La mia : [-30460278]
+Zotadebastos(546750): Q t empate Alejandro una final : [-30460278]
+Zotadebastos(546750): Dps d q t regale un gol por darle a L1 x cn el portero : [-30460278]
+Zotadebastos(546750): Es de ser lucky man : [-30460278]
+Leitinho(48757639): Mi gata : [-30460278]
+Leitinho(48757639): Que rural te veo : [-30460278]
+GaliciaVG(15599911): Son los fines de semana de desintoxicacion del pes : [-30460278]
+alejandrov8(8147614): Ya ves : [-30460278]
+Alonsoluiso(147767201): Alguien amistoso? : [-30460278]
+supremoh(6216877): /pole : [-119705997]
+Biblodra(20089861): Yo estoy dentro pero jugando contigo tengo lag, he jugado antes con otros y bien : [-30460278]
+Alonsoluiso(147767201): Que raro : [-30460278]
+Alonsoluiso(147767201): Es que últimamente estoy teniendo problemas con el wifi : [-30460278]
+supremoh(6216877): Ala, to palante 😆 : [-30460278]
+Caparro(7398148): Lool : [-30460278]
+Caparro(7398148): /pole : [-30460278]
+Caparro(7398148): Weee : [-30460278]
+Caparro(7398148): 😂😂😂😂 : [-30460278]
+Leitinho(48757639): Se ha venido arriba : [-30460278]
+supremoh(6216877): A ver si @Bitters terminan de averiguar el server y se borra el historial de poles xd : [-30460278]
+Leitinho(48757639): /insultar bot : [-30460278]
+Biblodra(20089861): No juega nadie? : [-30460278]
+Biblodra(20089861): Unas pachangas : [-30460278]
+supremoh(6216877): /insultar bot : [-30460278]
+alejandrov8(8147614): Gracias : [-30460278]
+supremoh(6216877): No sé por qué no hace caso a eso xd : [-30460278]
+supremoh(6216877): /insultar pepe : [-119705997]
+supremoh(6216877): /pole : [-119705997]
+supremoh(6216877): /insultar : [-119705997]
+supremoh(6216877): /insultar @pepe : [-119705997]
+supremoh(6216877): /insultar @caparro : [-119705997]
+supremoh(6216877): /insultar caparro : [-119705997]
+Caparro(7398148): /stats : [-30460278]
+Caparro(7398148): Jijiji : [-30460278]
+Lloberu(264799): /insultar @PES6FC_bot : [-30460278]
+supremoh(6216877): /insultar bot : [-30460278]
+supremoh(6216877): /insultar otrobot : [-119705997]
+supremoh(6216877): /pole : [-119705997]
+supremoh(6216877): /insultar caparro : [-119705997]
+supremoh(6216877): /ayuda : [-119705997]
+supremoh(6216877): /stats@PES6FC_bot : [-119705997]
+supremoh(6216877): /pole@PES6FC_bot : [-119705997]
+supremoh(6216877): /insultar@PES6FC_bot : [-119705997]
+supremoh(6216877): /clasificacion@PES6FC_bot : [-119705997]
+supremoh(6216877): /censo@PES6FC_bot : [-119705997]
+supremoh(6216877): /hilo@PES6FC_bot : [-119705997]
+supremoh(6216877): /equipos@PES6FC_bot : [-119705997]
+supremoh(6216877): /nohomo@PES6FC_bot : [-119705997]
+supremoh(6216877): /info@PES6FC_bot : [-119705997]
+supremoh(6216877): /ayuda@PES6FC_bot : [-119705997]
+supremoh(6216877): /insultar@PES6FC_bot : [-119705997]
+supremoh(6216877): /insultar : [-119705997]
+supremoh(6216877): /insultar @supremoh : [-119705997]
+supremoh(6216877): /insultar supremoh : [-119705997]
+supremoh(6216877): /insultar caparro : [-119705997]
+supremoh(6216877): /insultar : [-119705997]
+supremoh(6216877): /insultar caparro : [-119705997]
+supremoh(6216877): /insultar @caparro : [-119705997]
+supremoh(6216877): /insultar @bot : [-119705997]
+supremoh(6216877): /insultar bot : [-119705997]
+javx8(146083557): Pole : [-30460278]
+javx8(146083557): /info : [-30460278]
+javx8(146083557): Ya no sale la hora : [-30460278]
+javx8(146083557): /stats : [-30460278]
+javx8(146083557): Wtf : [-30460278]
+GaliciaVG(15599911): Pole : [-30460278]
+GaliciaVG(15599911): /stats : [-30460278]
+supremoh(6216877): Qué hacéis? xd : [-30460278]
+GaliciaVG(15599911): Trollear a little : [-30460278]
+Leitinho(48757639): Dejad al bot que siestee, pobrecico : [-30460278]
+GaliciaVG(15599911): Es andaluz : [-30460278]
+supremoh(6216877): He dicho que reiniciaria el contador 😆 : [-30460278]
+GaliciaVG(15599911): Es persona a partir de las 5 : [-30460278]
+supremoh(6216877): /insultar : [-119705997]
+supremoh(6216877): /insultar alejandrov8 : [-119705997]
+supremoh(6216877): /insultar bot : [-119705997]
+supremoh(6216877): /insultar bot : [-30460278]
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/pole
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/stats
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/ayuda
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/insultar@PES6FC_bot
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/insultar
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/clasificacion@PES6FC_bot
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/censo@PES6FC_bot
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/hilo@PES6FC_bot
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/equipos@PES6FC_bot
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/nohomo@PES6FC_bot
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/info@PES6FC_bot
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/ayuda@PES6FC_bot
+supremoh(6216877): in "Bdhdjdaasdfasddfasddfasdfasdfasdf"[-119705997]:/insultar caparro
+supremoh (6216877): /pole
+supremoh (6216877): /info
+supremoh(6216877) in "PRUEBAS"[-119705997]: /info

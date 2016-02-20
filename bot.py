@@ -10,18 +10,20 @@ from threading import Thread
 import json
 import sys
 
-reload(sys) 
-sys.setdefaultencoding("utf-8")
+reload(sys)                           # python 2
+sys.setdefaultencoding("utf-8")       #
 
 
 #Variables globales
 #############################################
-TOKEN = '196817759:AAGPd3ZCCnByvXjUE-MHZRD6ZIGtR9uWr0M' # Nuestro tokken del bot (el que @BotFather nos dió).
+TOKEN = '196817759:AAGPd3ZCCnByvXjUE-MHZRD6ZIGtR9uWr0M' # token del bot
 ADMIN = [6216877]
 GRUPOS = [-30460278, -119705997]
-PUEDO_POLEAR = False
-POLEADOR = ''
-POLES = {}
+
+with open('poles.json') as file:        # Leer ficheros al comienzo
+    POLES = json.load(file)
+with open('fechas.json') as other_file:
+        FECHAS = json.load(other_file)
 #############################################
 
 # Creamos el objeto de nuestro bot
@@ -29,20 +31,23 @@ bot = telebot.TeleBot(TOKEN)
 
 #############################################
 #Listener
-def listener(messages): # Con esto, estamos definiendo una función llamada 'listener', que recibe como parámetro un dato llamado 'messages'.
+# Con esto, estamos definiendo una función llamada 'listener', que recibe como parámetro un dato llamado 'messages'.
+def listener(messages): 
     for m in messages:
         cid = m.chat.id
-        if m.content_type == 'text': # Sólo saldrá en el log los mensajes tipo texto
-            if cid > 0:
-                mensaje = str(m.chat.first_name) + " [" + str(cid) + "]: " + m.text
-            else:
-                mensaje = str(m.from_user.first_name) + "[" + str(cid) + "]: " + m.text 
+        if m.content_type == 'text':
+            if cid > 0:                                                                 # Conversación privada
+                mensaje = str(m.chat.first_name) + " (" + str(cid) + "): " + m.text
+            else:                                                                       # Grupos
+                mensaje = m.from_user.username + '(' + str(m.from_user.id) + ') in "' + m.chat.title + '"[' + str(cid) + ']: ' + m.text
+            # mensaje = m.from_user.username + '(' + str(m.from_user.id) + '): ' + m.text + ' : [' + str(cid) + ']'
             f = open('log.txt', 'a')
             f.write(mensaje + "\n")
             f.close()
             print(mensaje)
- 
-bot.set_update_listener(listener) # Así, le decimos al bot que utilice como función escuchadora nuestra función 'listener' declarada arriba
+
+# Así, le decimos al bot que utilice como función escuchadora nuestra función 'listener' declarada arriba
+bot.set_update_listener(listener)
 
 #############################################
 #Funciones
@@ -53,45 +58,32 @@ def autorizacion(user_id):
 
 
 
-# Comprueba si m lleva desde un grupo autorizado
+# Comprueba si m llega desde un grupo autorizado
 def comprueba_grupo(m):
     return ((m.chat.type == 'group' or m.chat.type == 'supergroup') and (m.chat.id in GRUPOS))
 
 
 
-# Detecta si es medianoche para poder polear
-def check_midnight(m):
-    global PUEDO_POLEAR, POLEADOR
-    bot.send_message(m.chat.id, 'Comienza la batalla de las poles!!')
-    while(1):
-        now = datetime.datetime.now()
-        if now.hour == 23 and now.minute == 0 and now.second == 0:
-            PUEDO_POLEAR = True
-            POLEADOR = ''
-            sleep(86399)
+# Devuelve la fecha en formato dd-mm-yyyy de un mensaje
+def get_readable_date(unix_date):
+    return datetime.datetime.fromtimestamp(unix_date).strftime('%d-%m-%Y')
 
 
 
 # Reconoce el comando y llama a la función adecuada
-@bot.message_handler(func=lambda msg:msg.text.encode("utf-8"))
+@bot.message_handler(func=lambda msg:msg.text.encode("utf-8"))     # python 2
+# @bot.message_handler(content_types=['text'])                        # python 3
 def commands(m):
-    global POLES, ADMIN, POLEADOR
     if autorizacion(m.from_user.id):
         c = [
-            '/starting', '/pole', '/insultar', 
+            '/equipos', '/pole', '/insultar', 
             '/clasificacion', '/censo', '/hilo', 
             '/getcommands', '/setcommands', '/info', 
-            '/ayuda', '/nohomo', '/stats',
+            '/ayuda', '/nohomo', '/stats'
             ]
             
         if c[0] in m.text[:len(c[0])]:
-            if m.from_user.id in ADMIN:
-                with open('poles.json') as file:
-                    POLES = json.load(file)
-                with open('pole.json') as other_file:
-                    POLEADOR = json.load(other_file)
-                checker = Thread(target = check_midnight(m))
-                checker.start()
+            command_equipos(m)
         elif c[1] in m.text[:len(c[1])]:
             command_pole(m)
         elif c[2] in m.text[:len(c[2])]:
@@ -119,26 +111,28 @@ def commands(m):
 
 
 
-
 # Detecta la pole - GRUPOS
 def command_detectar_pole(m):
-    global PUEDO_POLEAR, POLEADOR, POLES
-    if comprueba_grupo(m): 
-        if PUEDO_POLEAR:
+    global POLES, FECHAS
+    if comprueba_grupo(m):
+        time = get_readable_date(m.date)
+        if time not in FECHAS:
             bot.reply_to(m, 'Menudo hijo de puta, tienes unas poles del copón. De fails nada, tu das gloria. ' +
                             'Menudas poles tienes, hijo de la gran puta. Olvídate de dejarlo, potencia esa mente tan espectacular ' + 
                             'que tienes, hijo de una perra sarnosa. Qué puta envidia me das!')
-            PUEDO_POLEAR = False
-            POLEADOR = m.from_user.username
-            if POLEADOR in POLES:
-                POLES[POLEADOR] += 1
-            else:
-                POLES[POLEADOR] = 1
+    
+            poleador = m.from_user.username
+            FECHAS[time] = poleador
             
-            with open('pole.json', 'w') as other_file:
-                json.dump(POLEADOR, other_file)
+            if poleador in POLES:
+                POLES[poleador] += 1
+            else:
+                POLES[poleador] = 1
+            
             with open('poles.json', 'w') as file:
                 json.dump(POLES, file)
+            with open('fechas.json', 'w') as other_file:
+                json.dump(FECHAS, other_file)
 
 
 
@@ -161,14 +155,13 @@ def despedida(m):
 
 # Comando /pole - GRUPOS
 def command_pole(m):
-    global PUEDO_POLEAR, POLEADOR
+    global FECHAS, POLES
     if comprueba_grupo(m): 
-        if PUEDO_POLEAR:
-            bot.send_message(m.chat.id, 'Corre hijo de puta, aún no han hecho la pole')
-        elif POLEADOR == '':
-            bot.send_message(m.chat.id, 'Lo siento shurhander, todavía no ha habido ninguna pole')
+        time = get_readable_date(m.date)
+        if time in FECHAS:
+            bot.send_message(m.chat.id, '||| Poleador del día |||\n\n@' + FECHAS[time])
         else: 
-            bot.send_message(m.chat.id, '||| Poleador del día |||\n\n@' + POLEADOR)
+            bot.send_message(m.chat.id, 'A qué esperas, hijo de puta? Haz la puñetera pole de una vez.')
 
 
 
@@ -203,11 +196,11 @@ def command_insultar(m):
                 mensaje = 'Con @supremoh no, joputa, que te reviento'
                 bot.reply_to(m, mensaje)
             else:
-                if insultado[0] != '@':                                         # se ha añadidido @
+                if insultado[0] != '@':                                     
                     mensaje = frases[random.randrange(len(frases))] + ' @' + insultado
                 else:                                                                   
                     mensaje = frases[random.randrange(len(frases))] + ' ' + insultado
-                    bot.send_message(m.chat.id, mensaje)                            # respondemos usando el id
+                bot.send_message(m.chat.id, mensaje)                            # respondemos usando el id
 
 
 
@@ -259,9 +252,9 @@ def command_stats(m):
     if comprueba_grupo(m): 
         mensaje = '||| Listado de poleadores |||\n\n'
         for key,value in POLES.items():
-            mensaje += key + ' = ' + str(value) + '\n'
+            mensaje += '@' + key + ' - ' + str(value) + '\n'
         bot.send_message(m.chat.id, mensaje)
-        
+
 
  
 # Comando /nohomo - GRUPOS
@@ -271,6 +264,14 @@ def command_nohomo(m):
             sihomo = file.read().split()
             mensaje = sihomo[random.randrange(len(sihomo))]
             bot.send_message(m.chat.id, mensaje)
+
+
+
+# Comando /equipos - ABIERTO
+def command_equipos(m):
+    with open('equipos.txt') as file:
+        mensaje = file.read().rstrip()
+        bot.reply_to(m, mensaje)
 
 
 
