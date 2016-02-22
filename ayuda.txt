@@ -1,10 +1,12 @@
 /stats - Listado de poleadores
 /pole - Devuelve al poleador del día
 /insultar <persona> - Insulta a alguien
+/info - Te informa de cómo jugar con nosotros
 /clasificacion - Enlaces a clasificaciones
 /censo - Censo de jugadores
 /hilo - Hilo en FC
 /equipos - Lista de equipos prohibidos
 /nohomo - Muestra una foto no homo
-/info - Información sobre el bot
 /ayuda - Muestra este mensaje de ayuda
+
+Bot creado por @supremoh para la FFPA.

@@ -252,7 +252,7 @@ def command_stats(m):
     if comprueba_grupo(m): 
         mensaje = '||| Listado de poleadores |||\n\n'
         for key,value in POLES.items():
-            mensaje += '@' + key + ' - ' + str(value) + '\n'
+            mensaje += '@' + key + ' = ' + str(value) + '\n'
         bot.send_message(m.chat.id, mensaje)
 
 
@@ -277,7 +277,9 @@ def command_equipos(m):
 
 # Comando /info - ABIERTO
 def command_info(m):
-    bot.send_message(m.chat.id, 'Información acerca de la liga forocochera del PES6.\n\nBot creado por @supremoh para la FFPA.')
+    with open('info.txt') as file:
+        mensaje = file.read().rstrip()
+        bot.reply_to(m, mensaje)
 
 
 
