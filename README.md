@@ -2,10 +2,20 @@
 
 ##Changelog:
 
+####Version 1.1.0:
+- New improved file processing system.
+- Some info like token will be saved on files in data folder.
+- Some changes on echo command.
+
+####Version 1.0.2:
+- Solved some troubles opening/closing files.
+- Some links in messages won't have preview anymore.
+
 ####Version 1.0.1:
+- Beta version is now stable.
 - Most commands will be answered through private conversation.
 
-####Version 1.0:
+####Version 1.0 - beta released:
 - Modularized all commands.
 - Documented functions.
 - Message handlers modified. 

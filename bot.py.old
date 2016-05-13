@@ -1,0 +1,419 @@
+# -*- coding: utf-8 -*-
+ 
+import telebot              # API bot library
+from telebot import types   # API bot types
+import time                 
+import random
+import datetime
+from time import sleep
+from threading import Thread
+import json
+import sys
+
+reload(sys)                           # python 2
+sys.setdefaultencoding("utf-8")       #
+
+
+# Global variables
+#############################################
+TOKEN = '196817759:AAGPd3ZCCnByvXjUE-MHZRD6ZIGtR9uWr0M' # Bot's token
+ADMIN = [6216877]
+GRUPOS = [-1001036575965, -1001037614905]       # PES6FC, Pruebas
+
+with open('data/poles.json') as __poles:        # Reads files at the beginning
+    POLES = json.load(__poles)
+with open('data/dates.json') as __fechas:
+    FECHAS = json.load(__fechas)
+with open('data/block.json') as __blocks:
+    BLOCKS = json.load(__blocks)
+with open('data/users.json') as __users:
+    USERS = json.load(__users)
+#############################################
+
+# Create bot object
+bot = telebot.TeleBot(TOKEN) 
+
+#############################################
+
+#Listener
+def listener(messages):
+    global USERS
+    for m in messages:
+        cid = m.chat.id
+
+        # Record user id
+        if m.from_user.username.lower() not in USERS:
+            USERS[m.from_user.username.lower()] = m.from_user.id
+            with open('data/users.json', 'w') as __users:
+                json.dump(USERS, __users)
+
+        # Log
+        if m.content_type == 'text':
+            if cid > 0:                                                    # Conversación privada
+                mensaje = str(m.chat.first_name) + " (" + str(cid) + "): " + m.text
+            else:                                                          # Grupos
+                mensaje = m.from_user.username + '(' + str(m.from_user.id) + ') in "' + m.chat.title + '"[' + str(cid) + ']: ' + m.text
+
+            f = open('log.txt', 'a')
+            f.write(mensaje + "\n")
+            f.close()
+            print(mensaje)
+
+# Declare last function as bot's listener
+bot.set_update_listener(listener)
+
+#############################################
+# Functions
+
+# Check if commands are available for this user
+def autorizacion(user_id):
+    return user_id not in BLOCKS and (open('data/all_people.txt').read().rstrip() == 'true' or user_id in ADMIN)
+
+
+
+# Send message using private conversation
+def send_private_message(uid, message):
+    bot.send_message(uid, message)
+
+
+
+# Check if message comes from an authorized group
+def comprueba_grupo(m):
+    return ((m.chat.type == 'group' or m.chat.type == 'supergroup') and (m.chat.id in GRUPOS))
+
+
+
+# Returns date on Spanish format
+def get_readable_date(unix_date):
+    return datetime.datetime.fromtimestamp(unix_date).strftime('%d-%m-%Y')
+
+
+
+# Recognize command and call the right function
+@bot.message_handler(func=lambda msg:msg.text.encode("utf-8"))     # python 2
+# @bot.message_handler(content_types=['text'])                     # python 3
+def commands(m):
+    if autorizacion(m.from_user.id):
+        c = [
+            '/equipos', '/pole', '/insultar', 
+            '/clasificacion', '/censo', '/hilo', 
+            '/getcommands', '/setcommands', '/info', 
+            '/ayuda', '/nohomo', '/stats',
+            '/admin', '/calendarioliga', '/calendariocopa',
+            '/calendarioeurocup', '/echo', '/block', 
+            '/unblock'
+            ]
+            
+        if c[0] in m.text[:len(c[0])].lower():
+            command_equipos(m)
+        elif c[1] in m.text[:len(c[1])].lower():
+            command_pole(m)
+        elif c[2] in m.text[:len(c[2])].lower():
+            command_insultar(m)
+        elif c[3] in m.text[:len(c[3])].lower():
+            command_clasificacion(m)
+        elif c[4] in m.text[:len(c[4])].lower():
+            command_censo(m)
+        elif c[5] in m.text[:len(c[5])].lower():
+            command_hilo(m)
+        elif c[6] in m.text[:len(c[6])].lower():
+            command_get_commands(m)
+        elif c[7] in m.text[:len(c[7])].lower():
+            command_set_commands(m)
+        elif c[8] in m.text[:len(c[8])].lower():
+            command_info(m)
+        elif c[9] in m.text[:len(c[9])].lower():
+            command_ayuda(m)
+        elif c[10] in m.text[:len(c[10])].lower():
+            command_nohomo(m)
+        elif c[11] in m.text[:len(c[11])].lower():
+            command_stats(m)
+        elif c[12] in m.text[:len(c[12])].lower():
+            command_admin(m)
+        elif c[13] in m.text[:len(c[13])].lower():
+            command_calendario_liga(m)
+        elif c[14] in m.text[:len(c[14])].lower():
+            command_calendario_copa(m)
+        elif c[15] in m.text[:len(c[15])].lower():
+            command_calendario_eurocup(m)
+        elif c[16] in m.text[:len(c[16])].lower():
+            command_echo(m)
+        elif c[17] in m.text[:len(c[17])].lower():
+            command_block(m)
+        elif c[18] in m.text[:len(c[18])].lower():
+            command_unblock(m)
+        elif 'pole' in m.text.lower():
+            command_detectar_pole(m)
+
+
+
+# Check pole - GROUPS
+def command_detectar_pole(m):
+    global POLES, FECHAS
+    if comprueba_grupo(m):
+        time = get_readable_date(m.date)
+        if time not in FECHAS:
+            bot.reply_to(m, 'Menudo hijo de puta, tienes unas poles del copón. De fails nada, tu das gloria. ' +
+                            'Menudas poles tienes, hijo de la gran puta. Olvídate de dejarlo, potencia esa mente tan espectacular ' + 
+                            'que tienes, hijo de una perra sarnosa. Qué puta envidia me das!')
+    
+            poleador = m.from_user.username
+            FECHAS[time] = poleador
+            
+            if poleador in POLES:
+                POLES[poleador] += 1
+            else:
+                POLES[poleador] = 1
+            
+            with open('data/poles.json', 'w') as file:
+                json.dump(POLES, file)
+            with open('data/dates.json', 'w') as other_file:
+                json.dump(FECHAS, other_file)
+
+
+
+# Welcome message
+@bot.message_handler(content_types=['new_chat_participant'])
+def bienvenido(m):
+    with open('data/bienvenido.txt') as file:  
+        mensaje = 'Bienvenido @' + m.new_chat_participant.username + '!! ' + file.read()
+        bot.send_message(m.chat.id, mensaje.rstrip())
+
+
+
+# Farewall message
+@bot.message_handler(content_types=['left_chat_participant'])
+def despedida(m):
+    mensaje = 'Dep, siempre saludaba'
+    bot.send_message(m.chat.id, mensaje)
+
+
+
+# Command /pole - GROUPS
+def command_pole(m):
+    global FECHAS, POLES
+    if comprueba_grupo(m): 
+        time = get_readable_date(m.date)
+        if time in FECHAS:
+            bot.send_message(m.chat.id, '||| Poleador del día |||\n\n@' + FECHAS[time])
+        else: 
+            bot.send_message(m.chat.id, 'A qué esperas, hijo de puta? Haz la puñetera pole de una vez.')
+
+
+
+#Command /insultar - GROUPS
+def command_insultar(m): 
+    if comprueba_grupo(m): 
+        frases = {
+            0:"Carajaula",
+            1:"Bocachancla",
+            2:"Eres más inútil que un gitano sin primos",
+            3:"Peinabombillas",
+            4:"Gilipollas",
+            5:"Mira macho vete a la mierda, de verdad",
+            6:"Tienes más cuernos que un saco de caracoles",
+            7:"Muerdealmohadas",
+            8:"Caracartón",
+            9:"Abrazafarolas",
+            10:"Planchabragas",
+            11:"Lamecharcos",
+            12:"¿Eres tonto o pellizcas cristales?",
+            13:"Cabestro",
+            14:"Eres más tonto que cagar de pie",
+            15:"Eres más inútil que el cenicero de una moto",
+            16:"Eres tan tonto que vendiste el coche para comprar gasolina",
+            17:"Eres más tonto que mear haciendo el pino",
+            18:"Eres más inútil que @MrMindungui",
+            19:"Tienes menos luces que la bici de un gitano"
+        }
+        
+        insultado = m.text[10:]
+    
+        if insultado == '':                                                 # no hay persona a la que insultar
+            mensaje = 'Pero dime a quién insulto, pedazo de inútil'
+            bot.reply_to(m, mensaje)                                        # respondemos citando al mensaje
+        else:
+            if insultado == 'supremoh' or insultado == '@supremoh':         
+                mensaje = 'Con @supremoh no, joputa, que te reviento'
+                bot.reply_to(m, mensaje)
+            elif insultado == 'PES6FC_bot' or insultado == '@PES6FC_bot':
+                mensaje = 'Tan retrasado eres que no sabes usar el puto comando?'
+                bot.reply_to(m, mensaje)
+            else:
+                if insultado[0] != '@':                                     
+                    mensaje = frases[random.randrange(len(frases))] + ' @' + insultado
+                else:                                                                   
+                    mensaje = frases[random.randrange(len(frases))] + ' ' + insultado
+                bot.send_message(m.chat.id, mensaje)                            # respondemos usando el id
+
+
+
+# Command /clasificacion - ALL
+def command_clasificacion(m):
+    with open('data/clasificacion.txt') as file:
+        mensaje = file.read()
+        bot.send_message(m.chat.id, mensaje)
+
+
+
+# Command /censo - ALL
+def command_censo(m):
+    url = 'https://docs.google.com/spreadsheets/d/1NS3H3xkcCw5aV_A8V0NdgN-OjVU-0X3qu0xHJgdBWhY/edit?usp=sharing'
+    bot.send_message(m.chat.id, '||| Listado de jugadores |||\n\n' + url)
+
+
+
+# Command /hilo - ALL
+def command_hilo(m):
+    url = 'http://www.forocoches.com/foro/showthread.php?p=221671912'
+    bot.send_message(m.chat.id, '||| Hilo en FC |||\n\n' + url)
+
+
+
+# Command /getcommands - ADMIN
+def command_get_commands(m):
+    if m.from_user.id in ADMIN:
+        bot.send_message(m.chat.id, open('data/all_people.txt').read().strip())
+
+
+
+# Command /setcommands - ADMIN
+def command_set_commands(m):
+    if m.from_user.id in ADMIN:
+        flag = m.text[13:].strip()
+        if flag == '':
+            flag = 'false'
+            
+        with open('data/all_people.txt', 'w') as file:
+            file.write(flag)
+            bot.send_message(m.chat.id, 'Enabled commands? ' + flag)
+
+
+
+# Command /block - ADMIN
+def command_block(m):
+    global USERS, BLOCKS
+    if m.from_user.id in ADMIN:
+        user = m.text[8:]
+        if user in USERS:
+            uid = USERS[user]
+            if uid in BLOCKS:
+                bot.reply_to(m, '@' + user + ' ya se encuentra bloqueado')
+            else:
+                BLOCKS.append(uid)
+                with open('data/block.json', 'w') as __blocks:
+                    json.dump(BLOCKS, __blocks)
+                bot.reply_to(m, '@' + user + ' acaba de ser bloqueado')
+        else:
+            bot.reply_to(m, 'No conozco a @' + user)
+
+
+
+# Command /unblock - ADMIN
+def command_unblock(m):
+    global USERS, BLOCKS
+    if m.from_user.id in ADMIN:
+        user = m.text[10:]
+        if user in USERS:
+            uid = USERS[user]
+            if uid in BLOCKS:
+                BLOCKS.remove(uid)
+                with open('data/block.json', 'w') as __blocks:
+                    json.dump(BLOCKS, __blocks)
+                bot.reply_to(m, '@' + user + ' ha sido desbloqueado')
+            else:
+                bot.reply_to(m, '@' + user + ' no se encuentra bloqueado')
+        else:
+            bot.reply_to(m, 'No conozco a @' + user)
+
+
+
+# Command /echo - ADMIN
+def command_echo(m):
+    if m.from_user.id in ADMIN:
+        mensaje = m.text[5:]
+        bot.send_message(-1001036575965, mensaje)
+
+
+
+# Command /stats - GROUPS
+def command_stats(m):
+    global POLES
+    if comprueba_grupo(m): 
+        mensaje = '||| Listado de poleadores |||\n\n'
+        for key,value in POLES.items():
+            mensaje += '@' + key + ' = ' + str(value) + '\n'
+        bot.send_message(m.chat.id, mensaje)
+
+
+ 
+# Command /nohomo - GROUPS
+def command_nohomo(m):
+    if comprueba_grupo(m): 
+        with open('data/nohomo.txt') as file:
+            sihomo = file.read().split()
+            mensaje = sihomo[random.randrange(len(sihomo))]
+            bot.send_message(m.chat.id, mensaje)
+
+
+
+# Command /equipos - ALL
+def command_equipos(m):
+    with open('data/equipos.txt') as file:
+        mensaje = file.read().rstrip()
+        bot.reply_to(m, mensaje)
+
+
+
+# Command /calendarioLiga - ALL
+def command_calendario_liga(m):
+    with open('data/calendario_liga.txt') as file:
+        mensaje = file.read().rstrip()
+        bot.send_message(m.chat.id, mensaje)
+
+
+
+# Command /calendarioCopa - ALL
+def command_calendario_copa(m):
+    with open('data/calendario_copa.txt') as file:
+        mensaje = file.read().rstrip()
+        bot.send_message(m.chat.id, mensaje)
+
+
+
+# Command /calendarioEurocup - ALL
+def command_calendario_eurocup(m):
+    with open('data/calendario_eurocup.txt') as file:
+        mensaje = file.read().rstrip()
+        bot.send_message(m.chat.id, mensaje)
+
+
+
+# Command /admin - GROUPS
+def command_admin(m):
+    if comprueba_grupo(m): 
+        admins = '@caparro - @bitters - @diegoherbie53 - @raulch - @supremoh'
+        bot.send_message(m.chat.id, '||| Admins |||\n\n' + admins)
+
+
+
+# Command /info - ALL
+def command_info(m):
+    with open('data/info.txt') as file:
+        mensaje = file.read().rstrip()
+        bot.reply_to(m, mensaje)
+
+
+
+# Command /ayuda - ALL
+def command_ayuda(m):
+    with open('data/ayuda.txt') as file:
+        mensaje = file.read().rstrip()
+        bot.send_message(m.chat.id, mensaje)
+
+
+
+#############################################
+
+# Requests
+bot.polling(none_stop=True) # Continue working even if there are errors
